@@ -18,6 +18,7 @@
             android:id="@+id/action_nav_home_to_registro"
             app:destination="@id/registro" />
     </fragment>
+
     <fragment
         android:id="@+id/nav_home_second"
         android:name="com.example.appliganacional.ui.home.HomeSecondFragment"
@@ -52,7 +53,11 @@
         android:id="@+id/comprar_Boletos"
         android:name="com.example.appliganacional.Comprar_Boletos"
         android:label="fragment_comprar__boletos"
-        tools:layout="@layout/fragment_comprar__boletos" />
+        tools:layout="@layout/fragment_comprar__boletos" >
+        <action
+            android:id="@+id/action_comprar_Boletos_to_pagoFragment"
+            app:destination="@id/pagoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/clasificacion"
         android:name="com.example.appliganacional.Clasificacion"
@@ -64,6 +69,7 @@
         android:label="fragment_jornada"
         tools:layout="@layout/fragment_jornada" />
     <fragment
+<<<<<<< HEAD
         android:id="@+id/login"
         android:name="com.example.appliganacional.Login"
         android:label="fragment_login"
@@ -77,4 +83,10 @@
             android:id="@+id/action_registro_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
+=======
+        android:id="@+id/pagoFragment"
+        android:name="com.example.appliganacional.ui.home.PagoFragment"
+        android:label="fragment_pago"
+        tools:layout="@layout/fragment_pago" >/>
+>>>>>>> e64105d96d7af81ede3f1b656e4de45aa0ba3c7f
 </navigation>
