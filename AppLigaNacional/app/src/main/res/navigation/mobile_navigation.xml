@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
             app:destination="@id/nav_home_second" />
+        <action
+            android:id="@+id/action_nav_home_to_registro"
+            app:destination="@id/registro" />
     </fragment>
     <fragment
         android:id="@+id/nav_home_second"
@@ -60,4 +63,18 @@
         android:name="com.example.appliganacional.Jornada"
         android:label="fragment_jornada"
         tools:layout="@layout/fragment_jornada" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.appliganacional.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.appliganacional.Registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registro_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
 </navigation>
