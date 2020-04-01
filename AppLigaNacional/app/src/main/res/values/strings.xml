@@ -32,6 +32,7 @@
     <string name="listo">Listo para pagar</string>
 
     <string name="Inf4">Por favor, escriba los datos de su numero de tarjeta de credito o debito.</string>
+    <string name="Inf5">Por favor, escriba su correo electronico.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

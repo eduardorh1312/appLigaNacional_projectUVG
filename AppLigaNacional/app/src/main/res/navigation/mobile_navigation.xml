@@ -67,5 +67,6 @@
     <fragment
         android:id="@+id/pagoFragment"
         android:name="com.example.appliganacional.ui.home.PagoFragment"
-        android:label="fragment_pago" />
+        android:label="fragment_pago"
+        tools:layout="@layout/fragment_pago" >/>
 </navigation>
