@@ -21,6 +21,14 @@
     <string name="App_Liga_Nacional">app liga</string>
     <string name="App_liga_nacional">App Liga Naciona</string>
     <string name="comentario">Aplicacion de la mejor liga centroamericana con todos los resultados, noticies y muchas cosas mas</string>
+    
+    <string name="Inf">Seleccione el partido y la localidad que desee asistir.</string>
+    <string name="partido">Partido</string>
+    <string name="liga">Liga</string>
+    <string name="Inf2">Selecione el numero de adultos y de niños que asistiran al evento.</string>
+    <string name="Inf3">*No se permiten mas de 6 personas en cada grupo.</string>
+    <string name="niños">Cant. de niños (Menores de 12 años)</string>
+    <string name="adultos">Cant. de adultos (Mayores de 13 años)</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
