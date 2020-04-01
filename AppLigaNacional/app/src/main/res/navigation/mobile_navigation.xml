@@ -31,7 +31,11 @@
         android:id="@+id/comprar_Boletos"
         android:name="com.example.appliganacional.Comprar_Boletos"
         android:label="fragment_comprar__boletos"
-        tools:layout="@layout/fragment_comprar__boletos" />
+        tools:layout="@layout/fragment_comprar__boletos" >
+        <action
+            android:id="@+id/action_comprar_Boletos_to_pagoFragment"
+            app:destination="@id/pagoFragment" />
+    </fragment>
     <fragment
         android:id="@+id/clasificacion"
         android:name="com.example.appliganacional.Clasificacion"
@@ -46,4 +50,9 @@
         android:name="com.example.appliganacional.Jornada"
         android:label="fragment_jornada"
         tools:layout="@layout/fragment_jornada" />
+    <fragment
+        android:id="@+id/pagoFragment"
+        android:name="com.example.appliganacional.ui.home.PagoFragment"
+        android:label="fragment_pago"
+        tools:layout="@layout/fragment_pago" >/>
 </navigation>
