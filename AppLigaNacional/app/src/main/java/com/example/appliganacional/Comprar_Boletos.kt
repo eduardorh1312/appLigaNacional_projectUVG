@@ -1,16 +1,24 @@
 package com.example.appliganacional
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.*
-import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import kotlinx.android.synthetic.main.fragment_comprar__boletos.*
-import kotlinx.android.synthetic.main.nav_header_main.*
 
 
 class Comprar_Boletos : Fragment() {
+
+    private val model: SharedViewModel? = null
+
+    fun SenderFragment() {
+        // Required empty public constructor
+    }
+
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
@@ -27,6 +35,7 @@ class Comprar_Boletos : Fragment() {
         var t_adultos = 0;
         var t_total = 0;
 
+        val model = ViewModelProviders.of(activity!!).get(SharedViewModel::class.java)
 
         restar_kids.setOnClickListener {
             if(t_kids <= 6 && t_kids > 0){
@@ -63,6 +72,11 @@ class Comprar_Boletos : Fragment() {
                 total.setText("Total: Q"+ t_total)
             }
         }
-        pagar1.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_comprar_Boletos_to_pagoFragment))
+
+        pagar1.setOnClickListener {
+            val msg: String = total.getText().toString()
+            model.setMessage(msg)
+            Navigation.createNavigateOnClickListener(R.id.action_comprar_Boletos_to_pagoFragment)
+        }
     }
 }
