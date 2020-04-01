@@ -98,12 +98,14 @@
         android:layout_marginLeft="312dp"
         android:layout_marginTop="452dp"
         android:fontFamily="monospace"
+        android:text="0"
         android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/total_ninos"
+        android:text="0"
         android:layout_width="81dp"
         android:layout_height="23dp"
         android:layout_marginStart="312dp"
@@ -256,6 +258,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:id="@+id/pagar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="584dp"
+        android:background="#000000"
+        android:fontFamily="monospace"
+        android:text="@string/listo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

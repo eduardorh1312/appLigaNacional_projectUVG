@@ -29,6 +29,7 @@
     <string name="Inf3">*No se permiten mas de 6 personas en cada grupo.</string>
     <string name="niños">Cant. de niños (Menores de 12 años)</string>
     <string name="adultos">Cant. de adultos (Mayores de 13 años)</string>
+    <string name="listo">Listo para pagar</string>
 
     <string name="Inf4">Por favor, escriba los datos de su numero de tarjeta de credito o debito.</string>
 
