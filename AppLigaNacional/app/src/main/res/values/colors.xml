@@ -5,4 +5,9 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="whiteStrings">#FFFFFF</color>
     <color name="redWarn">#FF0000</color>
+    <color name="redMun">#DC3434</color>
+    <color name="amarGua">#FFEB3B</color>
+    <color name="green">#208C1D</color>
+    <color name="green2">#4CAE49</color>
+    <color name="grey">#4E4B4B</color>
 </resources>

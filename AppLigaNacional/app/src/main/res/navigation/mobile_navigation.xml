@@ -11,10 +11,7 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
 
-        <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment" />
-            //app:destination="@id/nav_home_second" />
-        <action
+       <action
             android:id="@+id/action_nav_home_to_registro"
             app:destination="@id/registro" />
     </fragment>
