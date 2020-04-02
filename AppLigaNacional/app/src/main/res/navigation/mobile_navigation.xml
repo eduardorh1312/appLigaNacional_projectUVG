@@ -63,7 +63,11 @@
         android:id="@+id/clasificacion"
         android:name="com.example.appliganacional.Clasificacion"
         android:label="fragment_clasificacion"
-        tools:layout="@layout/fragment_clasificacion" />
+        tools:layout="@layout/fragment_clasificacion" >
+        <action
+            android:id="@+id/action_clasificacion_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
     <fragment
         android:id="@+id/jornada"
         android:name="com.example.appliganacional.Jornada"
