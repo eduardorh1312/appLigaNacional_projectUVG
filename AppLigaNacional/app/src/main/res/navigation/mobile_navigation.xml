@@ -11,14 +11,10 @@
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
 
-<<<<<<< HEAD
         <action
             android:id="@+id/action_HomeFragment_to_HomeSecondFragment" />
             //app:destination="@id/nav_home_second" />
         <action
-=======
-       <action
->>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
             android:id="@+id/action_nav_home_to_registro"
             app:destination="@id/registro" />
     </fragment>
@@ -58,18 +54,6 @@
             app:destination="@id/pagoFragment" />
     </fragment>
 
-<<<<<<< HEAD
-=======
-    <fragment
-        android:id="@+id/clasificacion"
-        android:name="com.example.appliganacional.Clasificacion"
-        android:label="fragment_clasificacion"
-        tools:layout="@layout/fragment_clasificacion" >
-        <action
-            android:id="@+id/action_clasificacion_to_nav_home"
-            app:destination="@id/nav_home" />
-    </fragment>
->>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
     <fragment
         android:id="@+id/jornada"
         android:name="com.example.appliganacional.Jornadas"
@@ -93,7 +77,6 @@
         android:name="com.example.appliganacional.ui.home.PagoFragment"
         android:label="fragment_pago"
         tools:layout="@layout/fragment_pago" />
-<<<<<<< HEAD
     <fragment
         android:id="@+id/clasificacion2"
         android:name="com.example.appliganacional.Clasificacion"
@@ -109,6 +92,4 @@
         android:name="com.example.appliganacional.Equipos"
         android:label="fragment_equipos"
         tools:layout="@layout/fragment_equipos" />
-=======
->>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
 </navigation>

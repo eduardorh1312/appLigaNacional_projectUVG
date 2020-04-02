@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo1"
+    tools:context=".Login">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/cardview_light_background"
+        android:fontFamily="monospace"
+        android:hint="@string/ingrese_su_nombre_de_usuario"
+        android:inputType="text"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/tv_usernameR"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/cardview_light_background"
+        android:fontFamily="monospace"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/cardview_light_background"
+        android:fontFamily="monospace"
+        android:hint="@string/Su_nombre_y_su_apellido"
+        android:inputType="text"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/tv_passwordR"
+        android:layout_width="296dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="45dp"
+        android:background="@color/cardview_light_background"
+        android:fontFamily="monospace"
+        android:hint="@string/ingrese_su_contraseña"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_usernameR" />
+
+    <Button
+        android:id="@+id/buttonRegisR"
+        android:layout_width="192dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/registrarse"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_passwordR" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="407dp"
+        android:layout_height="58dp"
+        android:background="@drawable/img2"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Registration Form"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

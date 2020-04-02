@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/App Liga Nacional.iml" filepath="$PROJECT_DIR$/App Liga Nacional.iml" group="App Liga Nacional" />
-      <module fileurl="file://$PROJECT_DIR$/AppLigaNacional-App Liga Nacional.iml" filepath="$PROJECT_DIR$/AppLigaNacional-App Liga Nacional.iml" group="App Liga Nacional" />
-      <module fileurl="file://$PROJECT_DIR$/app/AppLigaNacional-app.iml" filepath="$PROJECT_DIR$/app/AppLigaNacional-app.iml" group="App Liga Nacional/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="App Liga Nacional/app" />
     </modules>
   </component>

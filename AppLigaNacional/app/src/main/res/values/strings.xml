@@ -21,7 +21,7 @@
     <string name="App_Liga_Nacional">app liga</string>
     <string name="App_liga_nacional">App Liga Naciona</string>
     <string name="comentario">Aplicacion de la mejor liga centroamericana con todos los resultados, noticies y muchas cosas mas.</string>
-    <string name="warn">SUSPENDIDA POR CRISIS DEL COVID-19</string>
+
     <string name="Inf">Seleccione el partido y la localidad que desee asistir.</string>
     <string name="partido">Partido</string>
     <string name="liga">Liga</string>
@@ -30,7 +30,7 @@
     <string name="niños">Cant. de niños (Menores de 12 años)</string>
     <string name="adultos">Cant. de adultos (Mayores de 13 años)</string>
     <string name="listo">Listo para pagar</string>
-    <string name="CLASI1">CLASIFICACION</string>
+
     <string name="Inf4">Por favor, escriba los datos de su numero de tarjeta de credito o debito.</string>
     <string name="Inf5">Por favor, escriba su correo electronico.</string>
 
@@ -72,4 +72,5 @@
     <string name="Mixco">Mixco</string>
     <string name="csd_xelaju">CSD XELAJU</string>
     <string name="antigua_gfc">ANTIGUA GFC</string>
+    <string name="title_activity_registrarse">Sign in</string>
 </resources>
