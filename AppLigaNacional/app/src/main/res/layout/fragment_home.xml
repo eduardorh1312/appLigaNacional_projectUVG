@@ -44,18 +44,18 @@
                 android:layout_marginEnd="8dp" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/tv_username"
                 android:layout_width="318dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="80dp"
                 android:fontFamily="monospace"
-                android:hint="@string/ingrese_su_nombre_de_usuario"
+                android:hint="@string/ingrese_su_correo"
                 android:inputType="text"
                 android:textColor="@android:color/background_light" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/tv_password"
                 android:layout_width="325dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"

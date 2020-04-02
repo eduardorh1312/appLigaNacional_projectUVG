@@ -1,14 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Equipos">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-16dp">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="73dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/liga"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="76dp"
+                android:src="@android:drawable/screen_background_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="88dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/equipos"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/bttMunicipal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="140dp"
+                android:background="@color/redWarn"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/csd_municipal"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/bttGuastatoya"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/amarillo"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/guastatoya"
+                android:textColor="@color/green"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttCoban" />
+
+            <Button
+                android:id="@+id/bttComuniaciones"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/comunicaciones"
+                android:textColor="@color/celeste"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttMalacateco" />
+
+            <Button
+                android:id="@+id/bttAntigua"
+                android:layout_width="match_parent"
+                android:background="@color/green"
+                android:layout_height="0dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/antigua_gfc"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttXelaju" />
+
+            <Button
+                android:id="@+id/bttXelaju"
+                android:layout_width="match_parent"
+                android:background="@color/black"
+                android:layout_height="0dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/csd_xelaju"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttGuastatoya" />
+
+            <Button
+                android:id="@+id/bttCoban"
+                android:layout_width="match_parent"
+                android:background="@color/blueO"
+                android:layout_height="0dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/coban_imperial"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttMunicipal" />
+
+            <Button
+            android:id="@+id/bttMalacateco"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="@string/malacateco"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bttAntigua" />
+
+            <Button
+                android:id="@+id/bttSanarate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/Sanarate"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttIztapa" />
+
+            <Button
+                android:id="@+id/bttIztapa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/red"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/Iztapa"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttMixco" />
+
+            <Button
+                android:id="@+id/bttSanta_Lucia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/celeste"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/Santa_Lucia"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttSanarate" />
+
+            <Button
+                android:id="@+id/bttSiquinala"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/oranges"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/Siquinala"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttComuniaciones" />
+
+            <Button
+                android:id="@+id/bttMixco"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blues"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="@string/Mixco"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bttSiquinala" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

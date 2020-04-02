@@ -5,6 +5,71 @@
     android:id="@+id/clasificacion"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color"
     tools:context=".Clasificacion">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-39dp"
+        tools:layout_editor_absoluteY="-59dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="111dp"
+                android:layout_height="72dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="168dp"
+                android:layout_marginTop="20dp"
+                tools:src="@drawable/liga" />
+
+            <Button
+                android:id="@+id/buttonregreso"
+                android:layout_width="105dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-50dp"
+                android:background="#FFFFFF"
+                android:text="Regresar"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:shadowColor="#000000"
+                android:text="@string/Clasificacion"
+                android:textColor="#FFFFFF"
+                android:background="@color/black"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/clasificacion" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/redWarn"
+                android:fontFamily="@font/contrail_one"
+                android:gravity="center"
+                android:text="@string/Susp"
+                android:textColor="@color/color"
+                android:textSize="54.5sp" />
+        </LinearLayout>
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

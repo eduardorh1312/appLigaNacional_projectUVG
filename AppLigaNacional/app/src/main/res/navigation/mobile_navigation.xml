@@ -12,14 +12,14 @@
         tools:layout="@layout/fragment_home">
 
         <action
-            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-            app:destination="@id/nav_home_second" />
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment" />
+            //app:destination="@id/nav_home_second" />
         <action
             android:id="@+id/action_nav_home_to_registro"
             app:destination="@id/registro" />
     </fragment>
 
-    <fragment
+    <!--<fragment
         android:id="@+id/nav_home_second"
         android:name="com.example.appliganacional.ui.home.HomeSecondFragment"
         android:label="@string/home_second"
@@ -31,7 +31,7 @@
         <argument
             android:name="myArg"
             app:argType="string" />
-    </fragment>
+    </fragment>-->
 
     <fragment
         android:id="@+id/nav_gallery"
@@ -45,11 +45,6 @@
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
-        android:id="@+id/equipos"
-        android:name="com.example.appliganacional.Equipos"
-        android:label="fragment_equipos"
-        tools:layout="@layout/fragment_equipos" />
-    <fragment
         android:id="@+id/comprar_Boletos"
         android:name="com.example.appliganacional.Comprar_Boletos"
         android:label="fragment_comprar__boletos"
@@ -58,18 +53,13 @@
             android:id="@+id/action_comprar_Boletos_to_pagoFragment"
             app:destination="@id/pagoFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/clasificacion"
-        android:name="com.example.appliganacional.Clasificacion"
-        android:label="fragment_clasificacion"
-        tools:layout="@layout/fragment_clasificacion" />
+
     <fragment
         android:id="@+id/jornada"
-        android:name="com.example.appliganacional.Jornada"
+        android:name="com.example.appliganacional.Jornadas"
         android:label="fragment_jornada"
-        tools:layout="@layout/fragment_jornada" />
+        tools:layout="@layout/fragment_jornadas" />
     <fragment
-<<<<<<< HEAD
         android:id="@+id/login"
         android:name="com.example.appliganacional.Login"
         android:label="fragment_login"
@@ -78,15 +68,28 @@
         android:id="@+id/registro"
         android:name="com.example.appliganacional.Registro"
         android:label="fragment_registro"
-        tools:layout="@layout/fragment_registro" >
+        tools:layout="@layout/fragment_registro" />
         <action
             android:id="@+id/action_registro_to_nav_home"
             app:destination="@id/nav_home" />
-    </fragment>
-=======
+    <fragment
         android:id="@+id/pagoFragment"
         android:name="com.example.appliganacional.ui.home.PagoFragment"
         android:label="fragment_pago"
-        tools:layout="@layout/fragment_pago" >/>
->>>>>>> e64105d96d7af81ede3f1b656e4de45aa0ba3c7f
+        tools:layout="@layout/fragment_pago" />
+    <fragment
+        android:id="@+id/clasificacion2"
+        android:name="com.example.appliganacional.Clasificacion"
+        android:label="fragment_clasificacion"
+        tools:layout="@layout/fragment_clasificacion" />
+    <fragment
+        android:id="@+id/jornadas"
+        android:name="com.example.appliganacional.Jornadas"
+        android:label="fragment_jornadas"
+        tools:layout="@layout/fragment_jornadas" />
+    <fragment
+        android:id="@+id/equipos2"
+        android:name="com.example.appliganacional.Equipos"
+        android:label="fragment_equipos"
+        tools:layout="@layout/fragment_equipos" />
 </navigation>

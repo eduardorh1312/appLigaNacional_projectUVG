@@ -8,6 +8,43 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:136005924263:android:04bedb2a34dc1fc0717282",
+        "android_client_info": {
+          "package_name": "com.example.appliganacional"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136005924263-v47mko1tggntjrsec7rr6fkr6fm8686h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appliganacional",
+            "certificate_hash": "0aadd11aea3410d04355de9b8648075900cf1d36"
+          }
+        },
+        {
+          "client_id": "136005924263-hbhf8t88hqabvf0ee2nqmrilukabfs7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd3bU-uc_dxi_gak5euo5tcEAzZPdUKsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136005924263-hbhf8t88hqabvf0ee2nqmrilukabfs7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:136005924263:android:ec1bb066cc8e5dc5717282",
         "android_client_info": {
           "package_name": "com.example.appliganacional.ui.home"
