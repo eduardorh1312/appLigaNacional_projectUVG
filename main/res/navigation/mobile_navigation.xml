@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appliganacional.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment" />
+            //app:destination="@id/nav_home_second" />
+        <action
+            android:id="@+id/action_nav_home_to_registro"
+            app:destination="@id/registro" />
+    </fragment>
+
+    <!--<fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.appliganacional.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>-->
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.appliganacional.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.appliganacional.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/equipos"
+        android:name="com.example.appliganacional.Equipos"
+        android:label="fragment_equipos"
+        tools:layout="@layout/fragment_equipos" />
+    <fragment
+        android:id="@+id/comprar_Boletos"
+        android:name="com.example.appliganacional.Comprar_Boletos"
+        android:label="fragment_comprar__boletos"
+        tools:layout="@layout/fragment_comprar__boletos" >
+        <action
+            android:id="@+id/action_comprar_Boletos_to_pagoFragment"
+            app:destination="@id/pagoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/clasificacion"
+        android:name="com.example.appliganacional.Clasificacion"
+        android:label="fragment_clasificacion"
+        tools:layout="@layout/fragment_clasificacion" />
+    <fragment
+        android:id="@+id/jornada"
+        android:name="com.example.appliganacional.Jornada"
+        android:label="fragment_jornada"
+        tools:layout="@layout/fragment_jornada" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.appliganacional.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.appliganacional.Registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" />
+        <action
+            android:id="@+id/action_registro_to_nav_home"
+            app:destination="@id/nav_home" />
+    <fragment
+        android:id="@+id/pagoFragment"
+        android:name="com.example.appliganacional.ui.home.PagoFragment"
+        android:label="fragment_pago"
+        tools:layout="@layout/fragment_pago" />
+</navigation>
