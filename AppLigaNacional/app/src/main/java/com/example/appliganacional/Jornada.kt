@@ -1,59 +1,55 @@
 package com.example.appliganacional
 
+import android.graphics.Color
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
+import com.github.sundeepk.compactcalendarview.CompactCalendarView
+import com.github.sundeepk.compactcalendarview.CompactCalendarView.CompactCalendarViewListener
+import com.github.sundeepk.compactcalendarview.domain.Event
+import java.text.SimpleDateFormat
+import java.util.*
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [Jornada.newInstance] factory method to
- * create an instance of this fragment.
- */
-class Jornada : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class Jornada : AppCompatActivity() {
+    var compactCalendar: CompactCalendarView? = null
+    private val dateFormatMonth =
+        SimpleDateFormat("MMMM- yyyy", Locale.getDefault())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+        setContentView(R.layout.activity_main)
+        val actionBar: ActionBar? = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(false)
+        actionBar?.setTitle("9")
+        compactCalendar =
+            findViewById<View>(R.id.compactcalendar_view) as CompactCalendarView
+        compactCalendar!!.setUseThreeLetterAbbreviation(true)
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_jornada, container, false)
-    }
-
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment Jornada.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            Jornada().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
+        //Set an event for Teachers' Professional Day 2016 which is 21st of October
+        val ev1 =
+            Event(
+                Color.RED,
+                1477040400000L,
+                "Teachers' Professional Day"
+            )
+        compactCalendar!!.addEvent(ev1)
+        compactCalendar!!.setListener(object : CompactCalendarViewListener {
+            override fun onDayClick(dateClicked: Date) {
+                val context = applicationContext
+                if (dateClicked.toString().compareTo("Fri Oct 21 00:00:00 AST 2016") == 0) {
+                    Toast.makeText(context, "Teachers' Professional Day", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(context, "No Events Planned for that day", Toast.LENGTH_SHORT)
+                        .show()
                 }
             }
+
+            override fun onMonthScroll(firstDayOfNewMonth: Date) {
+                actionBar?.setTitle(dateFormatMonth.format(firstDayOfNewMonth))
+            }
+        })
     }
 }
