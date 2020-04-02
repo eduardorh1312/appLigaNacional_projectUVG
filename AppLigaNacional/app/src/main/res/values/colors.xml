@@ -3,6 +3,7 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+<<<<<<< HEAD
     <color name="whiteStrings">#F44336</color>
     <color name="redWarn">#F44336</color>
     <color name="color">#F0EAE9</color>
@@ -19,4 +20,13 @@
     <color name="blues">#673AB7</color>
     <color name="red">#86160D</color>
     <color name="blue">#3C23C7</color>
+=======
+    <color name="whiteStrings">#FFFFFF</color>
+    <color name="redWarn">#FF0000</color>
+    <color name="redMun">#DC3434</color>
+    <color name="amarGua">#FFEB3B</color>
+    <color name="green">#208C1D</color>
+    <color name="green2">#4CAE49</color>
+    <color name="grey">#4E4B4B</color>
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
 </resources>

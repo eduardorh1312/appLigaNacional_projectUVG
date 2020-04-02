@@ -8,11 +8,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="-16dp">
+=======
+        android:layout_height="match_parent">
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout2"
@@ -31,12 +35,20 @@
 
             <ImageView
                 android:id="@+id/imageView4"
+<<<<<<< HEAD
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="76dp"
                 android:src="@android:drawable/screen_background_dark"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
+=======
+                android:layout_width="404dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="72dp"
+                android:src="@android:drawable/screen_background_dark"
+                app:layout_constraintEnd_toEndOf="parent"
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -47,13 +59,18 @@
                 android:layout_marginTop="88dp"
                 android:fontFamily="monospace"
                 android:gravity="center"
+<<<<<<< HEAD
                 android:text="@string/equipos"
+=======
+                android:text="EQUIPOS"
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
 
             <Button
                 android:id="@+id/bttMunicipal"
@@ -79,10 +96,55 @@
                 android:fontFamily="monospace"
                 android:gravity="center"
                 android:text="@string/guastatoya"
+=======
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="404dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="134dp"
+                android:background="@color/redMun"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="148dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="CSD MUNICIPAL"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="404dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="194dp"
+                android:background="@color/amarGua"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="208dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="GUASTATOYA"
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
                 android:textColor="@color/green"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
+<<<<<<< HEAD
                 app:layout_constraintTop_toBottomOf="@+id/bttCoban" />
 
             <Button
@@ -235,6 +297,143 @@
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/bttSiquinala" />
+=======
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="404dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="254dp"
+                android:background="@color/whiteStrings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="268dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="COMUNICACIONES"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="404dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="314dp"
+                android:background="@color/green2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="328dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="ANTIGUA GFC"
+                android:textColor="@color/whiteStrings"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="404dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="374dp"
+                android:background="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="388dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="CSD XELAJU"
+                android:textColor="@color/whiteStrings"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="404dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="434dp"
+                android:background="@color/colorPrimaryDark"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="448dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="COBAN IMPERIAL"
+                android:textColor="@color/whiteStrings"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="404dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="494dp"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="259dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="508dp"
+                android:fontFamily="monospace"
+                android:gravity="center"
+                android:text="MALACATECO"
+                android:textColor="@color/whiteStrings"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="Quiero Ser Parte!"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

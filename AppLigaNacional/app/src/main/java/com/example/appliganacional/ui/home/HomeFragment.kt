@@ -16,17 +16,25 @@ import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
     private lateinit var homeViewModel: HomeViewModel
+<<<<<<< HEAD
     private lateinit var auth: FirebaseAuth
+=======
+
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         homeViewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_home, container, false)
         val textView: TextView = root.findViewById(R.id.text_home)
         return inflater.inflate(R.layout.fragment_home, container, false)
+<<<<<<< HEAD
 
+=======
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
         })
         return root
     }
+<<<<<<< HEAD
 /*
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,4 +59,13 @@ class HomeFragment : Fragment() {
     }
 
  */
+=======
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        buttonRegis.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_home_to_registro)
+        }
+    }
+>>>>>>> af855ac270211753ba8d1c080dcc5e6c8b9ecc99
 }
