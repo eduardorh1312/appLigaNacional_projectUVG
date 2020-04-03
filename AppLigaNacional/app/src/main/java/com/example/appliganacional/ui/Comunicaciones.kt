@@ -1,24 +1,20 @@
 package com.example.appliganacional.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
 import androidx.fragment.app.Fragment
 import com.example.appliganacional.R
-import com.example.appliganacional.databinding.ComunicacionesFragmentBinding
-import com.example.appliganacional.databinding.ComunicacionesFragmentBinding.inflate
+import com.example.appliganacional.databinding.EComunicacionesFragmentBinding
 
 class Comunicaciones : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val rootView: View = inflater.inflate(R.layout.comunicaciones_fragment, container, false)
+        val rootView: View = inflater.inflate(R.layout.e_comunicaciones_fragment, container, false)
 
-        val binding = ComunicacionesFragmentBinding.inflate(inflater)
+        val binding = EComunicacionesFragmentBinding.inflate(inflater)
         var model1 = Model()
         model1.description = "El Comunicaciones Fútbol Club, Sociedad Anónima, conocido simplemente como Comunicaciones, es un club de fútbol profesional con sede en la Ciudad de Guatemala. Actualmente milita en la Liga Nacional de Guatemala y juega sus partidos de local en el Estadio Doroteo Guamuch Flores.\n" +
                 "\n" + "Fue fundado oficialmente bajo el nombre de Club Social y Deportivo Comunicaciones el 16 de agosto de 1949. Actualmente el club cuenta con treinta Ligas, ocho Copas y diez Campeón de Campeones; a nivel internacional tiene en sus vitrinas dos Copas Fraternidad Centroamericana y una Copa de Campeones de la Concacaf." +
