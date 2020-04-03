@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appliganacional.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+        <action
+            android:id="@+id/action_nav_home_to_registro"
+            app:destination="@id/registro" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.appliganacional.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.appliganacional.ui.home.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.appliganacional.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/comprar_Boletos"
+        android:name="com.example.appliganacional.Comprar_Boletos"
+        android:label="fragment_comprar__boletos"
+        tools:layout="@layout/fragment_comprar__boletos" >
+        <action
+            android:id="@+id/action_comprar_Boletos_to_pagoFragment"
+            app:destination="@id/pagoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registro"
+        android:name="com.example.appliganacional.Registro"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registro_to_nav_home2"
+            app:destination="@id/nav_home" />
+    </fragment>
+        <action
+            android:id="@+id/action_registro_to_nav_home"
+            app:destination="@id/nav_home" />
+    <fragment
+        android:id="@+id/pagoFragment"
+        android:name="com.example.appliganacional.ui.home.PagoFragment"
+        android:label="fragment_pago"
+        tools:layout="@layout/fragment_pago" />
+    <fragment
+        android:id="@+id/clasificacion2"
+        android:name="com.example.appliganacional.Clasificacion"
+        android:label="fragment_clasificacion"
+        tools:layout="@layout/fragment_clasificacion" />
+    <fragment
+        android:id="@+id/jornadas"
+        android:name="com.example.appliganacional.Jornadas"
+        android:label="fragment_jornadas"
+        tools:layout="@layout/fragment_jornadas" />
+    <fragment
+        android:id="@+id/equipos2"
+        android:name="com.example.appliganacional.Equipos"
+        android:label="fragment_equipos"
+        tools:layout="@layout/fragment_equipos" >
+        <action
+            android:id="@+id/action_equipos2_to_xelaju"
+            app:destination="@id/xelaju" />
+        <action
+            android:id="@+id/action_equipos2_to_guastatoya"
+            app:destination="@id/guastatoya" />
+        <action
+            android:id="@+id/action_equipos2_to_santaLucia"
+            app:destination="@id/santaLucia" />
+        <action
+            android:id="@+id/action_equipos2_to_malacateco"
+            app:destination="@id/malacateco" />
+        <action
+            android:id="@+id/action_equipos2_to_zanarate"
+            app:destination="@id/zanarate" />
+        <action
+            android:id="@+id/action_equipos2_to_comunicaciones"
+            app:destination="@id/comunicaciones" />
+    </fragment>
+    <fragment
+        android:id="@+id/guastatoya"
+        android:name="com.example.appliganacional.ui.Equipos.Guastatoya"
+        android:label="fragment_guastatoya"
+        tools:layout="@layout/fragment_guastatoya" />
+    <fragment
+        android:id="@+id/santaLucia"
+        android:name="com.example.appliganacional.ui.Equipos.SantaLucia"
+        android:label="fragment_santa_lucia"
+        tools:layout="@layout/fragment_santa_lucia" />
+    <fragment
+        android:id="@+id/malacateco"
+        android:name="com.example.appliganacional.ui.Equipos.Malacateco"
+        android:label="fragment_malacateco"
+        tools:layout="@layout/fragment_malacateco" />
+    <fragment
+        android:id="@+id/xelaju"
+        android:name="com.example.appliganacional.ui.Equipos.Xelaju"
+        android:label="fragment_xelaju"
+        tools:layout="@layout/fragment_xelaju" />
+    <fragment
+        android:id="@+id/zanarate"
+        android:name="com.example.appliganacional.zanarate"
+        android:label="fragment_zanarate"
+        tools:layout="@layout/e_zanarate_fragment" />
+    <fragment
+        android:id="@+id/comunicaciones"
+        android:name="com.example.appliganacional.ui.Equipos.comunicaciones"
+        android:label="fragment_comunicaciones"
+        tools:layout="@layout/e_comunicaciones_fragment" />
+    <fragment
+        android:id="@+id/coban"
+        android:name="com.example.appliganacional.ui.Equipos.Coban"
+        android:label="fragment_coban"
+        tools:layout="@layout/e_coban_fragment" />
+</navigation>
